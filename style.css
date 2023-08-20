@@ -1,11 +1,21 @@
 body {
-    background-color: beige;
+    background-color: rgb(88, 197, 255);
   }
   h1 {
-    color: grey;
+    color: rgb(255, 255, 255);
   }
   p {
     color: black;
+    font-size: 20px;
+  }
+
+  p3 {
+    color: #ffffff;
+  }
+
+  h21 {
+    color: #fff;
+    font-size: 15px;
   }
 
 body, h1, h2, p, ul, li {
@@ -13,28 +23,74 @@ body, h1, h2, p, ul, li {
   padding: 0;
 }
 
-.header {
-  background-color: #333;
-  color: #fff;
+.button {
+  border-width: 3px;
+  color: white;
+  background-color: rgb(88, 197, 255);
+  padding: 15px 32px;
   text-align: center;
-  padding: 10px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
 }
 
-.container {
-  display: flex;
+.text-box {
+  background-color: beige;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 200px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+
+
 }
 
-
-.sidebar {
-  flex: 1;
-  background-color: #f2f2f2;
-  padding: 20px;
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+#navbar {
+  overflow: hidden;
+  background-color: beige;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #474242;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #489dbf;
+  color: white;
+}
 
 .content {
-  flex: 3;
-  padding: 20px;
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .footer {
@@ -42,4 +98,8 @@ body, h1, h2, p, ul, li {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+}
+
+.container {
+ background-size: contain;
 }
